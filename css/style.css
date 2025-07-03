@@ -1,0 +1,435 @@
+/* FundiConnect Earth-Toned Style Theme */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EBDD;
+  color: #2C2C2C;
+}
+
+/* Header */
+header {
+  background-color: #5D3A00;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: #EEC4B2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #EEC4B2;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #5D3A00;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #5D3A00;
+  color: #F5EBDD;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #C77F65;
+}
+
+/* Categories */
+.categories {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  color: #5D3A00;
+  margin-bottom: 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.category-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #5D3A00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #EEC4B2;
+  color: #5D3A00;
+  font-size: 0.9rem;
+}
+
+
+/* Service Providers Section */
+
+.providers {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.providers h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5D3A00;
+}
+
+.provider-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.provider-card {
+  background-color: #F5EBDD;
+  border: 1px solid #EEC4B2;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.provider-card:hover {
+  transform: translateY(-4px);
+}
+
+.provider-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.provider-card h3 {
+  margin-bottom: 0.5rem;
+  color: #5D3A00;
+}
+
+.provider-card p {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.provider-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #5D3A00;
+  color: #fff;
+  
+}
+
+/* Header Banner Background */
+.header-banner {
+  position: relative;
+  background-image: url('/assets/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Add a dark overlay for text clarity */
+.header-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust brightness as needed */
+  z-index: 1;
+}
+
+/* Ensure header content sits above overlay */
+.header-banner h1,
+.header-banner nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Adjust nav link colors for readability */
+.header-banner nav a {
+  color: #F5EBDD;
+}
+
+
+/* General body & text styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5EBDD;
+  color: #5D3A00;
+}
+
+/* Header with background image */
+.header-banner {
+  background-image: url('../assets/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.header-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header-banner h1,
+.header-banner nav {
+  position: relative;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+}
+
+nav a {
+  color: #F5EBDD;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Form container */
+.form-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(93, 58, 0, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #C77F65;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #D6B89E;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #EEC4B2;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5D3A00;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #C77F65;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #5D3A00;
+  color: white;
+}
+
+
+/* REGISTER PAGE STYLING */
+.register-header {
+  background-color: #333333;
+  color: #C6E3D6;
+  padding: 2rem;
+  text-align: center;
+}
+
+.register-header nav a {
+  color: #EEDCC2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #F8F8F8;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+}
+
+.info-section h2 {
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.info-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Reusing booking form styles for consistency */
+.form-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #C6E3D6;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: #C6E3D6;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #A4CABB;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333333;
+  color: white;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Fundi – FundiConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header-banner">
+    <h1>Book a Fundi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Request a Service</h2>
+    <form>
+      <div class="form-group">
+        <label for="fullName">Your Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Info</label>
+        <input type="text" id="contact" name="contact" required>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Service Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select a Service --</option>
+          <option>Cleaning</option>
+          <option>Plumbing</option>
+          <option>Childcare</option>
+          <option>Cooking & Catering</option>
+          <option>Tech Help</option>
+          <option>Event Services</option>
+          <option>Transport</option>
+          <option>Language Tutoring</option>
+          <option>Tailoring</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="provider">Preferred Fundi (optional)</label>
+        <input type="text" id="provider" name="provider">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location">
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" placeholder="Anything else the fundi should know?"></textarea>
+      </div>
+
+      <button type="button" class="submit-btn" onclick="window.location.href='confirm.html'">
+  Submit Booking
+</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FundiConnect | Community-driven services with heart</p>
+  </footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+<script src="js/firebase.js"></script>
+<script type="module" src="js/booking.js"></script>
+
+</body>
+</html>

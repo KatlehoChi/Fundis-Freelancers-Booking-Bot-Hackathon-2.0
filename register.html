@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register as a Fundi – FundiConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<script type="module" src="js/register.js"></script>
+<body>
+
+  <header class="register-header">
+    <h1>Become a Fundi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book Fundi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="info-section">
+    <h2>Why Register?</h2>
+    <p>FundiConnect helps skilled locals offer services directly to their community. As a registered fundi, you’ll gain visibility, earn income, and connect with verified clients. All you need is your skill, availability, and a good attitude!</p>
+    <ul>
+      <li>✔️ No fees — just opportunity</li>
+      <li>✔️ You set your schedule</li>
+      <li>✔️ We support you with visibility & trust</li>
+    </ul>
+  </section>
+
+  <section class="form-section">
+    <h2>Fundi Registration Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="fundiName">Full Name</label>
+        <input type="text" id="fundiName" name="fundiName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Phone / WhatsApp</label>
+        <input type="text" id="contact" name="contact" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Category</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select your skill --</option>
+          <option>Plumbing</option>
+          <option>Tech Help</option>
+          <option>Tailoring</option>
+          <option>Gardening</option>
+          <option>Event Services</option>
+          <option>Transport</option>
+          <option>Language Tutoring</option>
+          <option>Cleaning</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="availability">Availability</label>
+        <input type="text" id="availability" name="availability" placeholder="e.g. Weekends only, Mon–Fri 9am–5pm">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Area / Town</label>
+        <input type="text" id="location" name="location">
+      </div>
+
+      <div class="form-group">
+        <label for="bio">Brief Description</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about your experience, specialties, or passion."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Upload Profile Photo (optional)</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+      </div>
+
+      <button type="submit" class="submit-btn">Complete Registration</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FundiConnect | Connecting talent with community</p>
+  </footer>
+
+</body>
+</html>

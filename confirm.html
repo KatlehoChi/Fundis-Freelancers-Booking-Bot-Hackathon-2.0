@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm & Pay – FundiConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header-banner">
+    <h1>Confirm & Pay</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Back to Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Your Booking Was Received ✅</h2>
+    <p style="text-align:center; margin-bottom:2rem;">
+      Thank you! A Fundi will review your request and get in touch shortly.<br />
+      To complete your booking, please confirm via WhatsApp below.
+    </p>
+
+    <!-- WhatsApp Trigger Button -->
+    <a href="https://wa.me/27673523716?text=Hi%2C%20I%27m%20confirming%20my%20booking%20on%20FundiConnect.%20I%27d%20like%20to%20hire%20Sipho%20N.%20for%20Tech%20Help%20on%206%20July%20in%20Koppies.%20Please%20send%20payment%20details."
+       target="_blank"
+       class="submit-btn">
+       Confirm & Contact via WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2025 FundiConnect | Empowering local service connections</p>
+  </footer>
+  
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+
+<!-- Your Firebase config and logic -->
+<script src="js/firebase.js"></script>
+
+</body>
+</html>
