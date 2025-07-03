@@ -4,6 +4,8 @@
 
 ---
 
+- web link : https://fundiconnectweb.netlify.app/
+
 ## 📌 Project Highlights
 
 - Multi-page frontend with clean navigation
